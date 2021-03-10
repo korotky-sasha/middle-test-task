@@ -1,0 +1,10 @@
+<mat-card class="record">
+  <mat-card-title class="record-time" style="font-size: 18px">
+    <div>
+      <img [src]="calendarSrcImg.src" [alt]="calendarSrcImg.alt">
+      <span>    {{record.time | date : 'hh:mm a | MMMM d, y'}}</span>
+    </div>
+    <img [src]="vertDots.src" [alt]="vertDots.alt">
+  </mat-card-title>
+  <mat-card-content>{{record.content}}</mat-card-content>
+</mat-card>
